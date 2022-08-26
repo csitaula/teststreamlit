@@ -1,2 +1,7 @@
 import streamlit as st
-st.write("Hello world for deployment for free online")
+
+st.title("App Engine sample app")
+
+name = st.text_input("Your name?")
+
+st.write(f"Hello, {name or 'world'}!")
